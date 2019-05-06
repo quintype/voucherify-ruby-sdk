@@ -17,7 +17,7 @@ module Voucherify
           payload = params
         end
 
-        @client.post('/vouchers/publish', payload.to_json)
+        @client.post('/publications', payload.to_json)
       end
 
       def create_export(export)
